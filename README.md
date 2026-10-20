@@ -12,3 +12,8 @@ Repositori ini berisi sekumpulan shell script untuk melakukan otomatis pencarian
 1. Menjalankan backup manual:
 '''bash
 bash script/backup.sh
+
+## Fitur Pengembangan
+Fitur yang dipilih: Rotasi Arsip (Menyimpan maksimal 5 arsip terbaru dan otomatis menghapus arsip lama).
+
+Cara mencoba: Jalankan bash script/backup.sh lebih dari 5 kali secara berurutan, lalu periksa folder ~/backup_09011382530156. Anda akan melihat bahwa file arsip lama yang melebihi jumlah 5 akan terhapus secara otomatis dan hanya menyisakan 5 arsip paling baru.
